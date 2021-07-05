@@ -11,10 +11,14 @@ class Player(pygame.sprite.Sprite):
         # path = "assets/running/original_scale/"
         self.sprites.append(pygame.image.load(f'{path}/running1.png'))
         self.sprites.append(pygame.image.load(f'{path}/running1.png'))
+        self.sprites.append(pygame.image.load(f'{path}/running1.png'))
+        self.sprites.append(pygame.image.load(f'{path}/running2.png'))
         self.sprites.append(pygame.image.load(f'{path}/running2.png'))
         self.sprites.append(pygame.image.load(f'{path}/running2.png'))
         self.sprites.append(pygame.image.load(f'{path}/running3.png'))
         self.sprites.append(pygame.image.load(f'{path}/running3.png'))
+        self.sprites.append(pygame.image.load(f'{path}/running3.png'))
+        self.sprites.append(pygame.image.load(f'{path}/running4.png'))
         self.sprites.append(pygame.image.load(f'{path}/running4.png'))
         self.sprites.append(pygame.image.load(f'{path}/running4.png'))
         self.current_sprite = 0
@@ -64,4 +68,4 @@ while True:
     moving_sprites.draw(screen)
     moving_sprites.update(0.25)
     pygame.display.flip()
-    clock.tick(80)
+    clock.tick(60)
